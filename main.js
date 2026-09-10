@@ -34,9 +34,9 @@ const vbusioformat = /vbus.io|vbus.net$/;
 
 class MyVbus extends utils.Adapter {
     /**
-     * @param {Partial<ioBroker.AdapterOptions>} [options={}]
+     * @param {Partial<ioBroker.AdapterOptions>} options Adapter options.
      */
-    constructor(options) {
+    constructor(options = {}) {
         // @ts-expect-error won`t work otherwise
         super({
             ...options,
@@ -171,15 +171,15 @@ class MyVbus extends utils.Adapter {
             switch (connectionState) {
                 case 'CONNECTED':
                     this.log.info('Connection established');
-                    this.setStateAsync('info.connection', true, true);
+                    this.setState('info.connection', true, true);
                     break;
                 case 'INTERRUPTED':
                     this.log.debug('Connection interrupted');
-                    this.setStateAsync('info.connection', false, true);
+                    this.setState('info.connection', false, true);
                     break;
                 case 'RECONNECTING':
                     this.log.warn('Connection interrupted, trying to reconnect');
-                    this.setStateAsync('info.connection', false, true);
+                    this.setState('info.connection', false, true);
                     break;
                 default:
                     this.log.debug(`Connection state changed to ${connectionState}`);
@@ -465,7 +465,7 @@ class MyVbus extends utils.Adapter {
             })
             .catch(err => {
                 this.log.error(err);
-                this.setStateAsync('info.connection', false, true);
+                this.setState('info.connection', false, true);
                 return;
             });
     }
@@ -504,9 +504,9 @@ class MyVbus extends utils.Adapter {
 if (module.parent) {
     // Export the constructor in compact mode
     /**
-     * @param {Partial<ioBroker.AdapterOptions>} [options={}]
+     * @param {Partial<ioBroker.AdapterOptions>} [options] Optional adapter options passed to the constructor.
      */
-    module.exports = options => new MyVbus(options);
+    module.exports = (options = {}) => new MyVbus(options);
 } else {
     // otherwise start the instance directly
     new MyVbus();
