@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "myvbus",
-    "version": "0.6.1",
+    "version": "0.7.0",
     "news": {
+      "0.7.0": {
+        "en": "Adapter requires node.js >= 22 now\nFixed: i18n directory migrated to short format\nFixed: dependency updates and minor bugfixes",
+        "de": "Adapter benötigt jetzt node.js >= 22\nBehoben: Ordner i18n ins Kurzformat migriert\nBehoben: Dependency Updates und kleinere Bugfixes",
+        "ru": "Теперь для адаптера требуется файл node.js >= 22\nИсправлено: каталог i18n перенесен в короткий формат\nИсправлено: обновления зависимостей и незначительные исправления",
+        "pt": "O adaptador exige node.js >= 2\nFixo: pasta i18n migrada para formato curto\nCorrigido: dependências e pequenos bugs",
+        "nl": "Voor de adapter is nu node.js >= 22 nodig\nOpgelost: de i18n-directory is gemigreerd naar een kort formaat\nOpgelost: afhankelijkheidsupdates en kleine bugfixes",
+        "fr": "Adapter nécessite node.js >= 22\nCorrigé : le répertoire i18n a été migré au format court\nCorrigé : mises à jour de dépendances et bugs mineurs",
+        "it": "Adapter richiede node.js =2 ora\nRisolto: cartella i18n migrata in formato breve\nRisolto: dipendenze e bugfix minori",
+        "es": "El adaptador necesita node.js >= 22 ahora\nCorregido: el directorio i18n migró a formato corto\nFijo: actualizaciones de dependencias y errores menores",
+        "pl": "Adapter wymaga teraz node.js >= 22\nNaprawiono: katalog i18n migrowany do krótkiego formatu\nNaprawiono: aktualizacje zależności i drobne poprawki błędów",
+        "uk": "Адаптер вимагає node.js >= 22 зараз\nВиправлено: каталог i18n мігрував у короткий формат\nВиправлено: оновлення залежностей та незначні виправлення",
+        "zh-cn": "适配器现在需要 node.js >= 22\n修复：i18n 目录迁移到短格式\n修复：依赖项更新和小错误修复"
+      },
       "0.6.1": {
         "en": "Adapter requires admin >= 7.7.22 now\n**Fixed**: update release-script (#786)",
         "de": "Adapter benötigt jetzt admin >= 7.7.22\n**Fixed**: Update-Release-script (#786)",
@@ -80,19 +93,6 @@
         "pl": "Zmiana: węzeł > = 18, js- contoller > = 5 i admin > = 6 wymagane\nZmiana: Usunięto .npmignore\nNowy: Aktualizacja zależności",
         "uk": "Зміна: вершина>=18, js-contoller>=5 і admin>=6\nЗміна: Видалити .npmignore\nНовий: Оновлені залежності",
         "zh-cn": "更改:节点18、js-contoller%5和管理员6\n更改: 删除 .npmignore\n新建:更新的依赖关系"
-      },
-      "0.3.0": {
-        "en": "New: Use JSON config UI\nNew: Support ioBroker discovery\nChange: node>=16, js-contoller>=4 and admin>=6 required\nUpdated dependencies\nFix: Set info.connection false when reconnecting",
-        "de": "Neu: Verwendung von JSON config UI\nNeu: Unterstützung ioBroker Discovery\nÄnderung: node>=16, js-contoller>=4 und admin>=6 erforderlich\nAktualisierte Abhängigkeiten\nFix: info.connection auf false setzen beim Wiederverbinden",
-        "ru": "Новый: Используйте конфигурацию JSON UI\nНовый: Поддержка открытия ioBroker\nИзменение: node>=16, js-contoller>=4 и admin>=6 требуется\nОбновленные зависимости\nFix: Наберите информацию. соединение ложное при повторном подключении",
-        "pt": "Novo: Use JSON config UI\nNovo: Suporte ioBroker descoberta\nAlteração: node>=16, js-contoller>=4 e admin>=6 requerido\nDependências atualizadas\nFix: Definir informações. conexão falsa quando reconectar",
-        "nl": "Nieuw: Gebruik JSON config UI\nNieuw: Steun ioBroker ontdekking\nVerandering: node>=16, js-contoller>=4 en admin>=6 vereist\nBijgewerkte afhankelijkheden\nFix: Stel informatie in. verbinding foutief bij opnieuw verbinden",
-        "fr": "Nouveau : utilisez JSON config UI\nNouveau : soutenir la découverte d'ioBroker\nChangement : noeud>=16, js-contoller>=4 et admin>=6 requis\nDépendances actualisées\nCorrection: Réglez les informations. connexion fausse lors de la reconnexion",
-        "it": "Nuovo: Utilizzare JSON config UI\nNuovo: Sostegno ioBroker scoperta\nModifica: nodo>=16, js-contoller>=4 e admin>=6 richiesto\nDipendenze aggiornate\nFisso: Impostare le informazioni. connessione falsa quando si ricollega",
-        "es": "Nuevo: Use JSON config UI\nNuevo: El descubrimiento de ioBroker de soporte\nCambio: node confianza=16, js-contoller confianza=4 y administración=6 requerido\nDependencias actualizadas\nFijar: Establecer información. conexión falsa al reconectar",
-        "pl": "Nowy: Użyj interfejsu konfiguracyjnego JSON\nNowy: Wsparcie dla odkrycia jOBroker\nZmiana: węzeł > = 16, js- contoller > = 4 i admin > = 6 wymagane\nAktualizacja zależności\nFix: Ustaw informacje. połączenie false przy ponownym połączeniu",
-        "uk": "Новий: Використовуйте JSON config UI\nНовий: Підтримка ioBroker Відкриття\nЗміна: вершина>=16, js-contoller>=4 і admin>=6 потрібно\nОновлені залежності\nФіксація: Настроювання інформації. підключення false при відключенні",
-        "zh-cn": "新建: 使用 JSON 配置 UI\n新建: 支持 ioBroker 发现\n更改: 节点 16、js-contoller 4和 admin 6\n更新的依赖关系\nFix:设置信息. 重新连接时的连接错误"
       }
     },
     "titleLang": {

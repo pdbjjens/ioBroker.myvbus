@@ -1,4 +1,11 @@
 # Older changes
+## 0.5.0 (2025-01-30) - 2025H1 maintenance release
+
+* (pdbjjens) New: Accept serial port paths /dev/serial/by-id/usb-xxxxxxxxxxxxxxxxxxx or /dev/serial/by-path/platform-xxxxxxxxxxxxxxxxxxx
+* (pdbjjens) Change: Migration to ESLint 9
+* (simatec) Responsive Design added
+
+
 ## 0.4.0 (2024-08-13) - 2024H2 maintenance release
 
 * (pdbjjens) Change: node>=18, js-controller>=5 and admin>=6 required
