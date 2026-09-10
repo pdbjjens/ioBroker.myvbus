@@ -108,7 +108,6 @@ The authors are in no way endorsed by or affiliated with RESOL GmbH, or any asso
 
 MIT License
 
-
 Copyright (c) 2026 iobroker-community-adapters <iobroker-community-adapters@gmx.de>  
 Copyright (c) 2025 Jens-Peter Jensen <jjensen@t-online.de>
 
